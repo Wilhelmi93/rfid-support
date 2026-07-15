@@ -20,7 +20,7 @@ Support email: **support@teuma.dev**.
 
 - Icon is still a placeholder (`assets/img/icon.svg`) — swap in the real app
   icon once available.
-- Review and fill in the `TODO` sections in the privacy policy pages
-  (`de/datenschutz.html`, `en/privacy.html`) — they are drafts, not reviewed
-  legal text (data controller name/address, and whether the app uses
-  analytics, crash reporting, iCloud sync, or ad SDKs).
+- Privacy policy (`de/datenschutz.html`, `en/privacy.html`) is filled in with
+  the controller's details and current data-handling practice, but is not
+  reviewed by a lawyer — worth a final legal check before going live,
+  especially once analytics, surveys, or collaboration features are added.
