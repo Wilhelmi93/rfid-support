@@ -4,6 +4,8 @@ Marketing website for **RFIDapp**, an iOS/iPadOS app for reading, managing and
 reviewing RFID/NFC tags (ISO 14443, ISO 15693, and other NFC tag types
 supported by the iPhone).
 
+Live at **https://teuma.dev**.
+
 ## Structure
 
 - `index.html` — root redirect to `de/` or `en/` based on browser language
@@ -13,10 +15,9 @@ supported by the iPhone).
 Plain static HTML/CSS, no build step. Serve any of these directories with a
 static file host (e.g. GitHub Pages) to publish the site.
 
-Domain: **teuma.dev** (see `CNAME`, used by GitHub Pages custom domains).
 Support email: **support@teuma.dev**.
 
-## Before publishing
+## Notes
 
 - Privacy policy (`de/datenschutz.html`, `en/privacy.html`) is filled in with
   the controller's details and current data-handling practice, but is not
