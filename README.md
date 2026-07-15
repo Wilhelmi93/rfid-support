@@ -18,8 +18,6 @@ Support email: **support@teuma.dev**.
 
 ## Before publishing
 
-- Icon is still a placeholder (`assets/img/icon.svg`) — swap in the real app
-  icon once available.
 - Privacy policy (`de/datenschutz.html`, `en/privacy.html`) is filled in with
   the controller's details and current data-handling practice, but is not
   reviewed by a lawyer — worth a final legal check before going live,
