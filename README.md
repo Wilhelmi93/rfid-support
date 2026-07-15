@@ -13,10 +13,14 @@ supported by the iPhone).
 Plain static HTML/CSS, no build step. Serve any of these directories with a
 static file host (e.g. GitHub Pages) to publish the site.
 
+Domain: **teuma.dev** (see `CNAME`, used by GitHub Pages custom domains).
+Support email: **support@teuma.dev**.
+
 ## Before publishing
 
-- Replace the placeholder support email (`support@example.com`) in
-  `de/support.html`, `de/datenschutz.html`, `en/support.html`, `en/privacy.html`.
+- Icon is still a placeholder (`assets/img/icon.svg`) — swap in the real app
+  icon once available.
 - Review and fill in the `TODO` sections in the privacy policy pages
   (`de/datenschutz.html`, `en/privacy.html`) — they are drafts, not reviewed
-  legal text.
+  legal text (data controller name/address, and whether the app uses
+  analytics, crash reporting, iCloud sync, or ad SDKs).
