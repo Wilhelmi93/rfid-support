@@ -33,7 +33,7 @@
 
 <div class="wrap content">
   <h1>Datenschutzerklärung</h1>
-  <p class="updated">Stand: 15. Juli 2026</p>
+  <p class="updated">Stand: 28. Oktober 2026</p>
 
   <h2>1. Verantwortlicher</h2>
   <p>
@@ -43,25 +43,17 @@
     E-Mail: <a href="mailto:support@teuma.dev">support@teuma.dev</a>
   </p>
 
-  <h2>2. Welche Daten RFIDapp verarbeitet</h2>
+  <h2>2. Was auf deinem Gerät bleibt</h2>
   <p>
-    RFIDapp liest RFID- und NFC-Tags über die NFC-Schnittstelle des iPhones aus
-    (z. B. Tag-UID und weitere technische Kenndaten des Tags). Diese Daten sowie von
-    dir angelegte Einträge, Kommentare und der Scan-Verlauf werden lokal auf deinem
-    Gerät gespeichert.
+    RFIDapp liest RFID- und NFC-Tags über die NFC-Schnittstelle des iPhones aus, also
+    die UID des Tags und weitere technische Kenndaten. Diese Daten, die von dir
+    angelegten Einträge, Gruppennamen, Kommentare und der Scan-Verlauf werden
+    ausschließlich lokal auf deinem Gerät gespeichert.
   </p>
   <p>
-    Im aktuellen Stand der App werden keine Analyse- oder Tracking-Dienste,
-    Crash-Reporting-Dienste, kein iCloud-Sync und keine Werbenetzwerke eingebunden.
-    Es findet keine Übertragung deiner Tag- oder Verlaufsdaten an externe Server
-    statt.
-  </p>
-  <p>
-    Es ist möglich, dass zukünftige Versionen der App weitere Funktionen ergänzen,
-    die eine Datenverarbeitung erfordern – etwa eine anonymisierte Auswertung der
-    Feature-Nutzung, freiwillige Umfragen in der App, oder Funktionen für die
-    Zusammenarbeit mehrerer Nutzer. Sollte eine solche Funktion eingeführt werden,
-    wird diese Datenschutzerklärung vorab entsprechend aktualisiert.
+    UIDs, Kommentare, Gruppennamen und Freitexte verlassen dein Gerät nicht. Sie werden
+    weder an mich noch an Dritte übertragen. Ein Export als CSV oder JSON entsteht auf
+    deinem Gerät; wohin du ihn teilst, entscheidest du.
   </p>
 
   <h2>3. Zugriff auf NFC</h2>
@@ -70,34 +62,127 @@
     des iPhones ab. Ohne diese Berechtigung kann die App keine Tags lesen.
   </p>
 
-  <h2>4. Weitergabe an Dritte</h2>
+  <h2>4. Anonyme Nutzungsstatistik</h2>
   <p>
-    Im aktuellen Stand der App werden keine Daten an Dritte weitergegeben.
+    Wenn du zustimmst, erhebt die App anonyme Nutzungsstatistiken über Firebase
+    Analytics. Zweck ist allein, zu erkennen, welche Funktionen genutzt werden und an
+    welcher Stelle Scans scheitern – daraus entsteht die Priorität für die nächsten
+    Verbesserungen.
+  </p>
+  <p>Erhoben werden dabei:</p>
+  <ul>
+    <li>
+      eine pseudonyme App-Instanz-Kennung, die Firebase deiner App-Installation
+      zuweist – kein Name, keine Apple-ID, keine Werbe-ID (IDFA);
+    </li>
+    <li>
+      Ereignisse in der App: welcher Bildschirm geöffnet wurde, ob ein Scan gestartet,
+      erfolgreich, abgebrochen oder fehlgeschlagen ist, welche Tag-Familie erkannt wurde
+      (etwa MIFARE/NTAG oder ISO 15693), die Länge der UID in Byte, wie lange ein
+      abgebrochener Scan lief, sowie Aktionen bei Gruppen, Export, Paywall und Umfrage;
+    </li>
+    <li>
+      technische Rahmendaten: App- und Build-Version, Gerätemodell, iOS-Version und
+      Spracheinstellung;
+    </li>
+    <li>
+      ein ungefährer Standort auf Landes- oder Regionsebene, den Firebase aus deiner
+      IP-Adresse ableitet. Die IP-Adresse selbst wird dabei nicht in den Berichten
+      gespeichert.
+    </li>
+  </ul>
+  <p>
+    <strong>Nicht erhoben werden Tag-UIDs, Kommentare, Gruppennamen, Verlaufseinträge
+    und Freitexte.</strong> Die Statistik enthält nur Typen, Gründe und Anzahlen.
+  </p>
+  <p>
+    Du kannst die Nutzungsstatistik jederzeit in der App unter
+    <em>Einstellungen → Datenschutz → Anonyme Nutzungsstatistik</em> ein- und
+    ausschalten. Ist der Schalter aus, wird nichts erhoben und nichts gesendet.
   </p>
 
-  <h2>5. Speicherdauer</h2>
+  <h2>5. Feedback-Formular</h2>
   <p>
-    Lokal gespeicherte Daten (Verlauf, Einträge) verbleiben auf deinem Gerät, bis du
-    sie löschst oder die App deinstallierst.
+    Die App enthält eine kurze freiwillige Umfrage. Nur wenn du sie absendest, werden die
+    folgenden Angaben an Cloud Firestore übertragen: deine Bewertung, die von dir
+    ausgewählten Funktionen, deine Freitextantworten zu Problemen und Funktionswünschen,
+    App- und Build-Version, Spracheinstellung, Plattform, die Stelle, an der du die
+    Umfrage geöffnet hast, die Version der Umfrage und der Zeitpunkt des Absendens.
+  </p>
+  <p>
+    Das Feld für die E-Mail-Adresse ist optional. Trägst du eine ein, wird sie mit deinen
+    Antworten gespeichert und ausschließlich dafür verwendet, dir auf dein Feedback zu
+    antworten. Lässt du es leer, wird keine Adresse übertragen.
   </p>
 
-  <h2>6. Deine Rechte</h2>
+  <h2>6. Empfänger und Übermittlung in die USA</h2>
   <p>
-    Du hast im Rahmen der geltenden gesetzlichen Bestimmungen das Recht auf Auskunft,
-    Berichtigung, Löschung und Einschränkung der Verarbeitung deiner Daten sowie ein
-    Beschwerderecht bei einer Aufsichtsbehörde.
+    Für Nutzungsstatistik und Feedback setze ich Firebase ein, einen Dienst von Google
+    Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, der Daten auch an
+    Google LLC in den USA übermitteln kann. Google handelt dabei als
+    Auftragsverarbeiter auf Grundlage eines Vertrags nach Art. 28 DSGVO. Für die
+    Übermittlung in die USA gelten die EU-Standardvertragsklauseln; Google LLC ist
+    zudem unter dem EU-US Data Privacy Framework zertifiziert.
+  </p>
+  <p>
+    Die Feedback-Daten liegen im Firebase-Projekt <code>rfid-app-b2119</code> in der
+    Region <code>eur3</code> (Europa: Belgien und Niederlande). Weitere Empfänger gibt es nicht;
+    insbesondere werden keine Daten an Werbenetzwerke, Datenhändler oder
+    Analyse-Dienste Dritter weitergegeben, und es findet kein Tracking über Apps und
+    Websites hinweg statt.
   </p>
 
-  <h2>7. Kontakt</h2>
+  <h2>7. Rechtsgrundlagen</h2>
+  <p>
+    Die lokale Verarbeitung auf deinem Gerät ist Teil der Funktion, die du mit der
+    Nutzung der App in Anspruch nimmst (Art. 6 Abs. 1 lit. b DSGVO). Da diese Daten das
+    Gerät nicht verlassen, werden sie von mir nicht verarbeitet.
+  </p>
+  <p>
+    Nutzungsstatistik und Feedback beruhen auf deiner Einwilligung (Art. 6 Abs. 1 lit. a
+    DSGVO, für das Speichern der Kennung auf deinem Gerät zusätzlich § 25 Abs. 1 TDDDG).
+    Die Einwilligung ist freiwillig; die App funktioniert ohne sie vollständig. Du
+    kannst sie jederzeit über den Schalter in den Einstellungen widerrufen, ohne dass
+    dir dadurch ein Nachteil entsteht. Der Widerruf wirkt für die Zukunft.
+  </p>
+
+  <h2>8. Speicherdauer</h2>
+  <p>
+    Lokal gespeicherte Daten – Verlauf, Einträge, Gruppen, Kommentare – verbleiben auf
+    deinem Gerät, bis du sie löschst oder die App deinstallierst.
+  </p>
+  <p>
+    Statistikdaten werden nach 2 Monaten
+    automatisch gelöscht. Feedback-Antworten lösche ich, sobald sie ausgewertet und eine
+    etwaige Rückfrage beantwortet ist, spätestens nach
+    24 Monaten.
+  </p>
+
+  <h2>9. Deine Rechte</h2>
+  <p>
+    Du hast das Recht auf Auskunft über die zu dir gespeicherten Daten, auf Berichtigung,
+    Löschung und Einschränkung der Verarbeitung, auf Datenübertragbarkeit sowie auf
+    Widerruf einer erteilten Einwilligung. Außerdem kannst du dich bei einer
+    Aufsichtsbehörde beschweren – für mich zuständig ist der Landesbeauftragte für den
+    Datenschutz und die Informationsfreiheit Baden-Württemberg.
+  </p>
+  <p>
+    Zur Auskunft oder Löschung von Statistikdaten brauche ich die App-Instanz-Kennung,
+    weil ich dich sonst nicht zuordnen kann; sie ist pseudonym und mir nicht von selbst
+    bekannt. Hast du Feedback mit E-Mail-Adresse abgesendet, genügt diese Adresse.
+  </p>
+
+  <h2>10. Kontakt</h2>
   <p>
     Fragen zum Datenschutz kannst du an
     <a href="mailto:support@teuma.dev">support@teuma.dev</a> richten.
   </p>
 
-  <h2>8. Änderungen dieser Datenschutzerklärung</h2>
+  <h2>11. Änderungen dieser Datenschutzerklärung</h2>
   <p>
-    Diese Datenschutzerklärung kann bei Weiterentwicklung der App oder Änderung der
-    rechtlichen Anforderungen angepasst werden.
+    Diese Datenschutzerklärung wird angepasst, wenn sich die App weiterentwickelt oder
+    sich rechtliche Anforderungen ändern. Kommt eine Funktion hinzu, die weitere Daten
+    verarbeitet, wird die Erklärung vorab aktualisiert.
   </p>
 </div>
 
