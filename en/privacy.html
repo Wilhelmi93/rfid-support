@@ -33,7 +33,7 @@
 
 <div class="wrap content">
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 15, 2026</p>
+  <p class="updated">Last updated: October 28, 2026</p>
 
   <h2>1. Controller</h2>
   <p>
@@ -43,22 +43,16 @@
     Email: <a href="mailto:support@teuma.dev">support@teuma.dev</a>
   </p>
 
-  <h2>2. What data RFIDapp processes</h2>
+  <h2>2. What stays on your device</h2>
   <p>
-    RFIDapp reads RFID and NFC tags via the iPhone's NFC interface (e.g. the tag's
-    UID and other technical tag data). This data, along with any entries, comments
-    and the scan history you create, is stored locally on your device.
+    RFIDapp reads RFID and NFC tags through the iPhone's NFC interface — the tag's UID
+    and other technical tag data. That data, along with the entries, group names,
+    comments and scan history you create, is stored only on your device.
   </p>
   <p>
-    In the app's current state, no analytics or tracking services, crash-reporting
-    services, iCloud sync, or advertising networks are integrated. Your tag or
-    history data is not transmitted to any external server.
-  </p>
-  <p>
-    Future versions of the app may add features that require additional data
-    processing — for example an anonymized evaluation of feature usage, optional
-    in-app surveys, or collaboration features for multiple users. If such a feature
-    is introduced, this privacy policy will be updated in advance accordingly.
+    UIDs, comments, group names and free text never leave your device. They are not
+    transmitted to me or to anyone else. A CSV or JSON export is produced on your
+    device; where you share it is up to you.
   </p>
 
   <h2>3. NFC access</h2>
@@ -67,34 +61,122 @@
     Without this permission the app cannot read tags.
   </p>
 
-  <h2>4. Sharing with third parties</h2>
+  <h2>4. Anonymous usage statistics</h2>
   <p>
-    In the app's current state, no data is shared with third parties.
+    With your consent, the app collects anonymous usage statistics through Firebase
+    Analytics. The sole purpose is to see which features are used and where scans fail,
+    which is what sets the priority for the next improvements.
+  </p>
+  <p>What is collected:</p>
+  <ul>
+    <li>
+      a pseudonymous app instance identifier that Firebase assigns to your installation
+      — no name, no Apple ID, no advertising identifier (IDFA);
+    </li>
+    <li>
+      in-app events: which screen was opened, whether a scan was started, succeeded, was
+      cancelled or failed, which tag family was detected (for example MIFARE/NTAG or
+      ISO 15693), the length of the UID in bytes, how long a cancelled scan ran, and
+      actions involving groups, export, the paywall and the survey;
+    </li>
+    <li>
+      technical context: app and build version, device model, iOS version and language
+      setting;
+    </li>
+    <li>
+      an approximate location at country or region level, which Firebase derives from
+      your IP address. The IP address itself is not retained in the reports.
+    </li>
+  </ul>
+  <p>
+    <strong>Tag UIDs, comments, group names, history entries and free text are not
+    collected.</strong> The statistics contain only types, reasons and counts.
+  </p>
+  <p>
+    You can turn usage statistics on and off at any time in the app under
+    <em>Settings → Privacy → Anonymous usage statistics</em>. While the switch is off,
+    nothing is collected and nothing is sent.
   </p>
 
-  <h2>5. Data retention</h2>
+  <h2>5. Feedback form</h2>
   <p>
-    Locally stored data (history, entries) stays on your device until you delete it
-    or uninstall the app.
+    The app includes a short, optional survey. Only if you submit it are the following
+    details sent to Cloud Firestore: your rating, the features you selected, your
+    free-text answers about problems and feature requests, app and build version,
+    language setting, platform, where you opened the survey, the survey version and the
+    time of submission.
+  </p>
+  <p>
+    The email field is optional. If you enter an address, it is stored with your answers
+    and used only to reply to your feedback. If you leave it empty, no address is sent.
   </p>
 
-  <h2>6. Your rights</h2>
+  <h2>6. Recipients and transfer to the USA</h2>
   <p>
-    Depending on applicable law, you may have the right to access, correct, delete,
-    or restrict processing of your data, and the right to lodge a complaint with a
-    supervisory authority.
+    For usage statistics and feedback I use Firebase, a service of Google Ireland
+    Limited, Gordon House, Barrow Street, Dublin 4, Ireland, which may also transfer
+    data to Google LLC in the USA. Google acts as a processor under a contract pursuant
+    to Art. 28 GDPR. Transfers to the USA rely on the EU Standard Contractual Clauses;
+    Google LLC is additionally certified under the EU-US Data Privacy Framework.
+  </p>
+  <p>
+    Feedback data is held in the Firebase project <code>rfid-app-b2119</code> in region
+    <code>eur3</code> (Europe: Belgium and the Netherlands). There are no other recipients: no data goes
+    to advertising networks, data brokers or third-party analytics services, and there is
+    no tracking across apps or websites.
   </p>
 
-  <h2>7. Contact</h2>
+  <h2>7. Legal bases</h2>
+  <p>
+    Local processing on your device is part of the functionality you invoke by using the
+    app (Art. 6(1)(b) GDPR). Because this data never leaves the device, it is not
+    processed by me.
+  </p>
+  <p>
+    Usage statistics and feedback rely on your consent (Art. 6(1)(a) GDPR, and for
+    storing the identifier on your device additionally § 25(1) TDDDG, the German
+    implementation of the ePrivacy rules). Consent is voluntary and the app is fully
+    functional without it. You can withdraw it at any time using the switch in Settings,
+    at no disadvantage to you. Withdrawal takes effect going forward.
+  </p>
+
+  <h2>8. Data retention</h2>
+  <p>
+    Data stored locally — history, entries, groups, comments — stays on your device until
+    you delete it or uninstall the app.
+  </p>
+  <p>
+    Statistics data is deleted automatically after
+    2 months. Feedback responses are deleted
+    once they have been reviewed and any reply has been sent, and after
+    24 months at the latest.
+  </p>
+
+  <h2>9. Your rights</h2>
+  <p>
+    You have the right to access the data held about you, to have it corrected or
+    deleted, to restrict its processing, to data portability, and to withdraw consent you
+    have given. You may also lodge a complaint with a supervisory authority — the one
+    responsible for me is the State Commissioner for Data Protection and Freedom of
+    Information of Baden-Württemberg, Germany.
+  </p>
+  <p>
+    To access or delete statistics data I need the app instance identifier, because
+    otherwise I cannot match a request to it: it is pseudonymous and not known to me by
+    itself. If you submitted feedback with an email address, that address is enough.
+  </p>
+
+  <h2>10. Contact</h2>
   <p>
     Questions about privacy can be sent to
     <a href="mailto:support@teuma.dev">support@teuma.dev</a>.
   </p>
 
-  <h2>8. Changes to this policy</h2>
+  <h2>11. Changes to this policy</h2>
   <p>
-    This privacy policy may be updated as the app evolves or legal requirements
-    change.
+    This privacy policy will be updated as the app evolves or legal requirements change.
+    If a feature is added that processes further data, the policy will be updated in
+    advance.
   </p>
 </div>
 
